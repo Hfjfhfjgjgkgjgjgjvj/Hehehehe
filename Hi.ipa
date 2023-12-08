@@ -1,0 +1,8 @@
+import UIKit
+class ViewController: UIViewController {
+override func viewDidLoad() {
+super.viewDidLoad()
+// launch finder app
+UIApplication.shared.launchOptions = [kUIApplicationLaunchOptionsURLScheme as NSString]
+UIApplication.shared.open(URL.init(string: "macfinder://")!)
+}
